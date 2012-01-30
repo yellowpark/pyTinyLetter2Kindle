@@ -1,0 +1,35 @@
+#
+# pyTinyLetter2Kindle.py
+# A simple python script that checks a gmail account for a new tinyletter.com newsletter and sends to a Kindle device.
+# 
+# Checks a gmail account for the latest unseen email message on the approved senders list.
+# Grabs the body of the newsletter, adds a few html tags.
+# Creates a file and delivers as an email attachment to the Kindle email address.
+# Note that the file is not deleted.
+#
+# This was a coffee break script to push my tiny newsletter subscriptions to Kindle.
+# There is no error checking.
+# Run the script via crontab as often as you require.
+# It should just work if you change a few personal settings for your gmail account.
+# I have absolutely no idea if this will work on a different email provider.
+# This script is supplied without any warranty whatsoever, in the hope that it will be useful.
+#
+# By @yellowpark.
+#
+# This code is free to use under a GNU Lesser General Public License http://www.gnu.org/licenses/lgpl.html.
+#
+
+To use the script:
+
+1. Change your sending gmail settings in the sendEmail function on lines 22 - 31.
+2. Change your receiving gmail settings in the checkEmail function on lines 74 - 76.
+3. Change your approved senders in the approvedSenders function on line 145.
+4. Log in to Amazon.
+5. Click "Your Account".
+6. Click "Manage Your Kindle".
+7. Enter your Amazon username and password and log in to Amazon.
+8. Click "Personal Document Settings".
+9. In the "Approved Personal Document E-mail List" section, click "Add a new approved e-mail address".
+10. Add the email address of the sending newsletter (listed in the approvedSenders function line 145).
+11. Run the script.
+12. You could setup a crontab to check every hour for a newsletter, depending how many newsletter you subscribe to.
