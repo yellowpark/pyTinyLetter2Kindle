@@ -30,6 +30,6 @@ To use the script:
 7. Enter your Amazon username and password and log in to Amazon.
 8. Click "Personal Document Settings".
 9. In the "Approved Personal Document E-mail List" section, click "Add a new approved e-mail address".
-10. Add the email address of the sending newsletter (listed in the approvedSenders function line 145).
+10. Add the sending email address.
 11. Run the script.
 12. You could setup a crontab to check every hour for a newsletter, depending how many newsletter you subscribe to.
