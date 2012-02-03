@@ -118,8 +118,10 @@ def checkEmail():
 			  print '------------------------------------------->'
 	
 			# Open a file
-			print 'Creating the file
-			fo = open(subjectStripped + ".html", "w")
+			print 'Creating the file'
+			fPath = r'/home/username/kindle/' + subjectStripped + '.html' # change this to match the path to the containing folder
+			
+			fo = open(fPath, "w")
 			fo.write('<html><head><title>' + subjectStripped + '</title></head><body>')
 			fo.write(payload)
 			fo.write('</body></html>')
