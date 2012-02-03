@@ -16,8 +16,6 @@
 #
 # By @yellowpark.
 #
-# This code is free to use under a GNU Lesser General Public License http://www.gnu.org/licenses/lgpl.html.
-#
 
 import re
 import imaplib
